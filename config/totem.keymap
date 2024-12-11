@@ -39,10 +39,9 @@
             bindings = <&kp ESC>;
         };
 
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog TVP1>;
+        combo_caps {
+            bindings = <&caps_word>;
+            key-positions = <21 22>;
         };
     };
 
@@ -95,23 +94,6 @@
             tapping-term-ms = <300>;
             quick-tap-ms = <200>;
             flavor = "hold-preferred";
-        };
-    };
-
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
         };
     };
 
@@ -192,7 +174,7 @@
         &none   &kp N7        &kp N8        &kp N9        &none      &kp CARET     &kp AMPS      &kp UP_ARROW    &kp SQT     &trans
         &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans     &kp C_MUTE    &kp LEFT      &kp DOWN_ARROW  &kp RIGHT   &trans
 &trans  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV      &kp C_NEXT  &trans  &trans
-                              &trans        &gif          &mo ADJ    &trans        &kp C_PP      &trans
+                              &trans        &trans        &mo ADJ    &trans        &kp C_PP      &trans
             >;
         };
 
