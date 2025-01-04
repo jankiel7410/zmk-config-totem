@@ -121,7 +121,7 @@
             bindings = <
          &kp Q          &kp W                &kp F        &kp P                &kp B                     &kp J             &kp L                 &kp U              &kp Y                 &kp SQT
          &hml LSHIFT A  &hml LEFT_CONTROL R  &hml LALT S  &hml LEFT_COMMAND T  &kp G                     &kp M             &hmr RIGHT_COMMAND N  &hmr RALT E        &hmr RIGHT_CONTROL I  &hmr RSHIFT O
-&kp TAB  &kp Z          &kp X                &kp C        &kp D                &kp V                     &kp K             &kp H                 &kp COMMA          &kp DOT               &kp FSLH       &kp RS(RIGHT_ALT)
+&kp TAB  &kp Z          &kp X                &kp C        &kp D                &kp V                     &kp K             &kp H                 &kp COMMA          &kp DOT               &kp FSLH       &kp CAPS
                                              &kp LALT     &htl NAV BACKSPACE   &ht LEFT_COMMAND ENTER    &ht RSHIFT SPACE  &mo SYM               &kp RIGHT_CONTROL
             >;
         };
