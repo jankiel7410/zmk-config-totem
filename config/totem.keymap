@@ -43,6 +43,26 @@
             bindings = <&caps_word>;
             key-positions = <21 22>;
         };
+
+        caps-left {
+            bindings = <&kp LEFT>;
+            key-positions = <31 16>;
+        };
+
+        caps-down {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <31 17>;
+        };
+
+        caps-up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <31 18>;
+        };
+
+        caps-right {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <31 19>;
+        };
     };
 
     behaviors {
@@ -104,6 +124,7 @@
 
         base_layer {
             display-name = "Base";
+
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "BASE";
@@ -121,9 +142,9 @@
 
             bindings = <
          &kp Q          &kp W                &kp F        &kp P                &kp B                     &kp J             &kp L                 &kp U              &kp Y                 &kp SQT
-         &hml LSHIFT A  &hml LEFT_CONTROL R  &hml LALT S  &hml LEFT_COMMAND T  &kp G                     &kp M             &hmr RIGHT_COMMAND N  &hmr RALT E        &hmr RIGHT_CONTROL I  &hmr RSHIFT O
+         &hml LSHIFT A  &hml LEFT_CONTROL R  &hml RALT S  &hml LEFT_COMMAND T  &kp G                     &kp M             &hmr RIGHT_COMMAND N  &hmr RALT E        &hmr RIGHT_CONTROL I  &hmr RSHIFT O
 &kp TAB  &kp Z          &kp X                &kp C        &kp D                &kp V                     &kp K             &kp H                 &kp COMMA          &kp DOT               &kp FSLH       &kp CAPS
-                                             &kp LALT     &htl NAV BACKSPACE   &ht LEFT_COMMAND ENTER    &ht RSHIFT SPACE  &mo SYM               &kp RIGHT_CONTROL
+                                             &kp RALT     &htl NAV BACKSPACE   &ht LEFT_COMMAND ENTER    &ht RSHIFT SPACE  &mo SYM               &kp RIGHT_CONTROL
             >;
         };
 
@@ -131,6 +152,7 @@
 
         upper {
             display-name = "Symbols";
+
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "upper";
@@ -158,6 +180,7 @@
 
         sim_layer {
             display-name = "Numpad";
+
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "SYM";
@@ -185,6 +208,7 @@
 
         adjust_layer {
             display-name = "Adjust";
+
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "ADJ";
